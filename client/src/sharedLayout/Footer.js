@@ -1,10 +1,12 @@
+import NavLinkList from "./NavLinkList.js"
+
 const Footer = () => {
   return <section>
     <div>
       Social Icons
     </div>
     <div>
-      Nav Links
+      <NavLinkList />
     </div>
   </section>
 }

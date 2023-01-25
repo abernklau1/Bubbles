@@ -6,8 +6,8 @@ const Login = () => {
   return <section>
     <div>
       <form className="login-form">
-        {inputs.forEach(object, i, () => {
-          <Input key={i} name={object["name"]} type={object["type"]} />
+        {inputs.map((object, i) => {
+          return (<Input key={i} name={object["name"]} type={object["type"]} />)
         })}
       </form>
     </div>
